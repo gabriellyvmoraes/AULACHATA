@@ -1,6 +1,9 @@
-numero = int(input("Quer ver a tabuada de qual número? "))
+import random
 
-print(f"\nTabuada do {numero}:")
-for i in range(1, 11):
-    resultado = numero * i
-    print(f"{numero} x {i} = {resultado}")
+numero_secreto = random.randint(1, 10)
+palpite = int(input("Adivinhe o número entre 1 e 10: "))
+
+if palpite == numero_secreto:
+    print("Você acertou! Parabéns!")
+else:
+    print(f"Errou! O número era {numero_secreto}.")
