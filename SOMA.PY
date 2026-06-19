@@ -1,7 +1,6 @@
-idade = int(input("Digite a sua idade: "))
+numero = int(input("Quer ver a tabuada de qual número? "))
 
-if idade >= 18:
-    print("Você já pode tirar a carteira de motorista!")
-else:
-    anos_restantes = 18 - idade
-    print(f"Ainda não pode dirigir. Faltam {anos_restantes} anos.")
+print(f"\nTabuada do {numero}:")
+for i in range(1, 11):
+    resultado = numero * i
+    print(f"{numero} x {i} = {resultado}")
