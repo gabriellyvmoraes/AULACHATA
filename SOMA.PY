@@ -1,8 +1,7 @@
-nome = input("Digite seu nome: ")
+idade = int(input("Digite a sua idade: "))
 
-print(f"Olá, {nome}! Vamos fazer uma soma.")
-
-num1 = float(input("Digite o primeiro número: "))
-num2 = float(input("Digite o segundo número: "))
-resultado = num1 + num2
-print(f"A soma de {num1} e {num2} é igual a {resultado}.")
+if idade >= 18:
+    print("Você já pode tirar a carteira de motorista!")
+else:
+    anos_restantes = 18 - idade
+    print(f"Ainda não pode dirigir. Faltam {anos_restantes} anos.")
